@@ -17,13 +17,24 @@ body {
   background-color: var(--primary-bg);
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: red solid 1px;
+}
+.container.align-center {
+  text-align: center;
+}
 /* header */
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header > .logo {
+.header .logo {
   color: var(--accent-color);
-  display: block;
+  display: inline-block;
 
   font-family: Raleway;
   font-weight: 700;
@@ -36,7 +47,7 @@ body {
 }
 .header .link {
   color: var(--primary-text-color);
-  display: block;
+  display: inline-block;
 
   font-family: Roboto;
   font-weight: 500;
@@ -54,7 +65,7 @@ body {
 }
 .header .address-link {
   color: var(--secondary-text-color);
-  display: block;
+  display: inline-block;
 
   font-family: Roboto;
   font-weight: 500;
@@ -92,6 +103,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 40px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -102,6 +114,9 @@ body {
   background: #188ce8;
 }
 /* features */
+.features .list-padding {
+  padding: 94px 0px;
+}
 .features .title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -116,8 +131,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin-top: 10px;
 }
+
 /* wedo */
+.wedo .list-margin {
+  margin-top: 50px;
+}
 .wedo .title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -127,6 +147,27 @@ body {
   text-align: center;
 }
 /* team */
+
+.container.team-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team.margin {
+  margin-top: 94px;
+}
+.team {
+  background: var(--secondary-bg);
+}
+.team .team-list {
+  margin-top: 50px;
+}
+.team-list > .list-description {
+  width: 270px;
+  background: var(--primary-bg);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team .title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -181,7 +222,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
-  display: block;
+  display: inline-block;
 }
 
 /* --page portfolio-- */
@@ -208,7 +249,7 @@ body {
 .portfolio .link {
   background: var(--primary-bg);
   border: 1px solid #eeeeee;
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 .portfolio .title {

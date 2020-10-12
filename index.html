@@ -12,7 +12,8 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a href="./index.html" class="logo">Web<span class="logo-text">Studio</span></a>
+      <div class="container">
+        <a href="./index.html" class="logo">Web<span class="logo-text">Studio</span></a>
       <nav>
         <ul>
           <li>
@@ -26,6 +27,7 @@
           </li>
         </ul>
       </nav>
+      
       <ul>
         <li>
           <a class="address-link" href="mailto:info@devstudio.com"
@@ -38,19 +40,23 @@
           >
         </li>
       </ul>
+    </div>
     </header>
     <main>
       <!-- hero -->
       <section class="hero">
-        <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+        <div class="container align-center">
+          <h1 class="title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button">
           Заказать услугу
         </button>
+        </div>
       </section>
       <!-- features-->
       <section class="features">
-        <h2 hidden>Особенности</h2>
-        <ul>
+        <div class="container">
+          <h2 hidden>Особенности</h2>
+        <ul class="list-padding">
           <li>
             <h3 class="title">Внимание к деталям</h3>
             <p class="paragraph">
@@ -80,11 +86,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- wedo -->
       <section class="wedo">
-        <h2 class="title">Чем мы занимаемся</h2>
-        <ul>
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+        <ul class="list-margin">
           <li>
             <img
               src="./images/we-do/we-do1.png"
@@ -110,12 +118,14 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- team -->
-      <section class="team">
+      <section class="team margin">
+       <div class="container team-padding">
         <h2 class="title">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="team-list">
+          <li class="list-description">
             <img
               src="./images/comand/productdesigner.png"
               width="270"
@@ -156,6 +166,7 @@
             <p class="position">UI Designer</p>
           </li>
         </ul>
+       </div>
       </section>
     </main>
     <!-- footer -->
